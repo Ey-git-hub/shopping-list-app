@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class NewList extends StatefulWidget {
-  NewList({super.key});
+const NewList({super.key});
   @override
   State<NewList> createState() {
     return _NewListState();
@@ -9,7 +9,14 @@ class NewList extends StatefulWidget {
 }
 
 class _NewListState extends State<NewList> {
+  @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(title: Text('Add a new item')));
+    return Scaffold(appBar: AppBar(title: Text('Add a new item'),
+    ),
+    body:Padding(
+      padding :EdgeInsets.all(12),
+      child: ,
+    ) ,
+    );
   }
 }
