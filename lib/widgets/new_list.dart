@@ -13,7 +13,20 @@ class _NewListState extends State<NewList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Add a new item')),
-      body: Padding(padding: EdgeInsets.all(12), child: Text('The form')),
+      //adding the from
+      body: Padding(
+        padding: EdgeInsets.all(12),
+        child: Form(
+          child: Column(
+            children: [
+              TextFormField(
+                maxLength: 50,
+                decoration: InputDecoration(label: Text("Name")),
+              ), //instead of textfield we add testformfield()because we are using form
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
