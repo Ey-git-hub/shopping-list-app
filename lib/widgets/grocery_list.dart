@@ -7,7 +7,7 @@ class GroceryList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("grocery list")),
+      appBar: AppBar(title: Text("Your Groceries")),
       body: ListView.builder(
         itemCount: groceryItems.length,
         itemBuilder: (ctx, index) => ListTile(
